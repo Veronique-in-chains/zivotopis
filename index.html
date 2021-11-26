@@ -36,7 +36,9 @@
   </head>
 
   <body>
-    <nav>
+    <div class="container">
+      <div class="top">
+    <nav class="top__nav">
       <ul>
         <li><a href="#jobs">PRAXE</a></li>
         <li><a href="#edu">VZDĚLÁNÍ</a></li>
@@ -45,65 +47,78 @@
         <li><a href="#contact">KONTAKT</a></li>
       </ul>
     </nav>
-    <header>
+    <header class="top__header">
       <h1>Veronika Bosáková</h1>
     </header>
-    <div id="jobs">
+  </div>
+
+    <main class="main">
+    <div class="main__box" id="jobs">
       <h2>Praxe</h2>
       <h3>Agentura pro podnikání a inovace</h3>
       <div class="row">
-        <div class="detail">
+        <div class="row__detail">
           Administrace dotačních projektů v Operačním programu Podnikání a
           inovace pro konkurenceschopnost, konzultace s žadateli, prezentace a
           propagace programu a výzev, mentoring
         </div>
-        <div class="dates">od roku 2017</div>
+        <div class="row__dates">od roku 2017</div>
       </div>
       <h3>Ministerstvo průmyslu a obchodu</h3>
       <div class="row">
-        <div class="detail">
+        <div class="row__detail">
           Koordinace projektů strategických průmyslových zón, konzultace s
           příjemci dotace, podílení se na přípravě vládních usnesení.
         </div>
-        <div class="dates">2017</div>
+        <div class="row__dates">2017</div>
       </div>
       <h3>CzechInvest</h3>
       <div class="row">
-        <div class="detail">
+        <div class="row__detail">
           Administrace projektů průmyslových zón podpořených Programem na
           podporu podnikatelských nemovitostí a infrastruktury, konzultace a
           kontrola žádostí.
         </div>
-        <div class="dates">2015 - 2017</div>
+        <div class="row__dates">2015 - 2017</div>
       </div>
     </div>
 
-    <div id="edu">
+    <div class="main__box" id="edu">
       <h2>Vzdělání</h2>
       <h3>Institut oceňování majetku VŠE</h3>
       <div class="row">
-        <div class="detail">
+        <div class="row__detail">
           Odhadce nemovitostí - specializační studium - kurz celoživotního
           vzdělávání
         </div>
-        <div class="dates">2017 - 2020</div>
+        <div class="row__dates">2017 - 2020</div>
       </div>
       <h3>Národohospodářská fakulta VŠE</h3>
       <div class="row">
-        <div class="detail"><span>Ing.</span>, obor: Regionální studia</div>
-        <div class="dates">2009 - 2015</div>
+        <div class="row__detail"><span class="degree">Ing.</span>, obor: Regionální studia</div>
+        <div class="row__dates">2009 - 2015</div>
       </div>
       <h3>Střední odborná škola pro administrativu EU</h3>
       <div class="row">
-        <div class="detail">
-          <span>maturita</span>, obor: Provoz diplomatických služeb
+        <div class="row__detail">
+          <span class="degree">maturita</span>, obor: Provoz diplomatických služeb
         </div>
-        <div class="dates">2005 - 2009</div>
+        <div class="row__dates">2005 - 2009</div>
       </div>
     </div>
 
-    <div id="skills">
+    <div class="main__box" id="skills">
       <h2>Dovednosti</h2>
+      <h3>FrontEnd</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS, flexbox, grid</li>
+        <li>Sass</li>
+        <li>BEM</li>
+        <li>generátor statických webů Eleventy</li>
+        <li>markdown</li>
+        <li>git</li>
+      </ul>
       <h3>Úřednické zkoušky</h3>
       <ul>
         <li>Společné evropské politiky podpory</li>
@@ -113,8 +128,6 @@
       <ul>
         <li>ms office</li>
         <li>ms2014+</li>
-        <li>html, css</li>
-        <li>python</li>
       </ul>
       <h3>Jazyky</h3>
       <ul>
@@ -124,7 +137,7 @@
       </ul>
     </div>
 
-    <div id="hobbies">
+    <div class="main__box" id="hobbies">
       <a name="hobbies"></a>
       <h2>Zájmy</h2>
       <ul>
@@ -134,38 +147,37 @@
         <li>ukulele</li>
       </ul>
     </div>
-
-    <footer>
+  </main>
+    <footer class="footer">
       <div id="contact">
         <h2>Kontakt</h2>
-        <ul>
-          <li><img src="telephone.svg" /> +420 776 177 215</li>
+        <ul class="footer__contacts">
+          <li><img class="icon" src="images/telephone.svg" /> +420 776 177 215</li>
           <li>
-            <img src="envelope.svg" />
-            <a href="mailto:veronikabosakova@gmail.com"
-              >veronikabosakova@gmail.com</a
-            >
+            <img class="icon" src="images/envelope.svg" />
+            <a href="mailto:veronikabosakova@gmail.com"> veronikabosakova@gmail.com</a>
           </li>
         </ul>
-        <ul class="icons">
+        <ul class="footer__icons">
           <li>
             <a
               href="https://www.linkedin.com/in/veronika-bos%C3%A1kov%C3%A1-248b0164/"
-              ><img src="linkedin.svg"
+              ><img class="icon--large" src="images/linkedin.svg"
             /></a>
           </li>
           <li>
             <a href="https://www.facebook.com/veronika.bosakova"
-              ><img src="facebook.svg"
+              ><img class="icon--large" src="images/facebook.svg"
             /></a>
           </li>
           <li>
             <a href="https://github.com/Veronique-in-chains"
-              ><img src="github.svg"
+              ><img class="icon--large" src="images/github.svg"
             /></a>
           </li>
         </ul>
       </div>
     </footer>
+  </div>
   </body>
 </html>

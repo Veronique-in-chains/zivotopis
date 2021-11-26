@@ -1,0 +1,160 @@
+$medium: @media screen and (min-width: 800px);
+$large: @media screen and (min-width: 900px);
+$small: @media screen and (min-width: 640px);
+$headerColor: #e5383b;
+$contrastColor: #9d0208;
+$lighterColor: #7f7f7f;
+
+
+.container {
+  max-width: 1200px;
+  padding: 0 15%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column-reverse;
+  $medium {
+    flex-direction: column;
+  }
+  &__nav {
+    ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    a {
+      display: inline-block;
+      padding: 20px 30px;
+      letter-spacing: 5px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      }
+    }
+  }
+  &__header {
+    width: 100%;
+    opacity: 80%;
+    background: url(images/fotka.jpeg) no-repeat center;
+    background-size: cover;
+    padding-top: 400px;
+    &:hover {
+      opacity: 100%;
+    }
+    h1 {
+    font-size: 40px;
+    font-weight: 100;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    color: $headerColor;
+    line-height: 0.8;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 3px rgb(0, 0, 0);
+    $large {
+      font-size: 80px;
+      }
+    }
+  }
+}
+
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: $lighterColor;
+}
+
+a:hover {
+  color: $contrastColor;
+}
+
+
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 3px;
+  font-size: 26px;
+  color: black;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "Oswald", sans-serif;
+  color: #9d0208;
+  font-size: 15px;
+  margin: 30px 0 0 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.main__box {
+  margin: 100px 0;
+}
+
+.row {
+  $small {
+    display: flex;
+    &__detail {
+      flex: 80%;
+    }
+    &__dates {
+      flex: 20%;
+      text-align: right;
+    }
+  }
+  &__dates {
+    color: $lighterColor;
+  }
+}
+
+
+
+.degree {
+  color: black;
+  font-weight: bold;
+}
+
+
+
+.footer {
+  border-top: 1px solid black;
+  line-height: 2;
+  margin-top: 100px;
+  padding: 40px 0 250px 0;
+  &__contacts {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+  }
+  &__icons {
+    display: flex;
+    justify-content: center;
+    li {
+    font-size: 30px;
+    a:hover {
+      background-color: $lighterColor;
+    }
+  }
+  .icon--large {
+    width: 45px;
+    padding: 30px;
+  }
+}
+}
+
+
+
