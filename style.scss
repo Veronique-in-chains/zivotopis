@@ -1,0 +1,163 @@
+$medium: 800px;
+$large: 900px;
+$small: 640px;
+$headerColor: #e5383b;
+$contrastColor: #9d0208;
+$lighterColor: #7f7f7f;
+$fontColor: #000000;
+$mainFont: "Montserrat", sans-serif;
+$headerFont: "Roboto", sans-serif;
+$header3Font: "Oswald", sans-serif;
+
+
+.container {
+  max-width: 1200px;
+  padding: 0 15%;
+  margin: 0 auto;
+  font-family: $mainFont;
+  font-size: 17px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column-reverse;
+  @media screen and (min-width: $medium) {
+    flex-direction: column;
+  }
+  &__nav {
+    ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    a {
+      display: inline-block;
+      padding: 20px 30px;
+      letter-spacing: 5px;
+      font-family: $headerFont;
+      font-weight: 300;
+      }
+    }
+  }
+  &__header {
+    width: 100%;
+    opacity: 80%;
+    background: url(images/fotka.jpeg) no-repeat center;
+    background-size: cover;
+    padding-top: 400px;
+    &:hover {
+      opacity: 100%;
+    }
+    h1 {
+    font-size: 40px;
+    font-weight: 100;
+    text-align: left;
+    font-family: $headerFont;
+    color: $headerColor;
+    line-height: 0.8;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 3px $fontColor;
+    @media screen and (min-width: $large) {
+      font-size: 80px;
+      }
+    }
+  }
+}
+
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: $lighterColor;
+}
+
+a:hover {
+  color: $contrastColor;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: $headerFont;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 26px;
+  color: $fontColor;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: $header3Font;
+  color: $contrastColor;
+  font-size: 15px;
+  margin: 30px 0 0 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.main__box {
+  margin: 100px 0;
+}
+
+.row {
+  @media screen and (min-width: $small) {
+    display: flex;
+    &__detail {
+      flex: 80%;
+      &--degree {
+        color: $fontColor;
+        font-weight: bold;
+}
+    }
+    &__dates {
+      flex: 20%;
+      text-align: right;
+    }
+  }
+  &__dates {
+    color: $lighterColor;
+  }
+}
+
+
+.footer {
+  border-top: 1px solid $fontColor;
+  line-height: 2;
+  margin-top: 100px;
+  padding: 40px 0 250px 0;
+  &__contacts {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  &__icons {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    li {
+    font-size: 30px;
+    a:hover {
+      opacity: 50%;
+    }
+    }
+  }
+}
+
+.icon--large {
+  width: 45px;
+  padding: 30px;
+}
+
+
+
+
+
+
