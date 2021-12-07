@@ -42,7 +42,7 @@ html {
   position: relative;
   width: 100%;
   opacity: 80%;
-  background: url("images/fotka.jpeg") no-repeat center;
+  background: url("/images/fotka.jpeg") no-repeat center;
   background-size: cover;
   height: 600px;
   transition: opacity 0.5s;
