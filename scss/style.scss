@@ -9,13 +9,21 @@ $mainFont: "Montserrat", sans-serif;
 $headerFont: "Roboto", sans-serif;
 $header3Font: "Oswald", sans-serif;
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .container {
   max-width: 1200px;
-  padding: 0 15%;
+  padding: 0 12%;
   margin: 0 auto;
   font-family: $mainFont;
   font-size: 17px;
+
 }
 
 .top {
@@ -45,9 +53,10 @@ $header3Font: "Oswald", sans-serif;
     position: relative;
     width: 100%;
     opacity: 80%;
-    background: url(images/fotka.jpeg) no-repeat center;
+    background: url(/images/fotka.jpeg) no-repeat center;
     background-size: cover;
     height: 600px;
+    transition: opacity 0.5s;
     &:hover {
       opacity: 100%;
     }
@@ -107,10 +116,11 @@ li {
   list-style-type: none;
 }
 
-.main__box {
-  margin: 100px 0;
+.main {
+  &__box {
+    margin: 100px 0;
+  }
 }
-
 .row {
   @media screen and (min-width: $small) {
     display: flex;
@@ -154,10 +164,8 @@ li {
     }
   }
 }
-
 .icon--large {
-  width: 45px;
-  padding: 30px;
+  margin: 20px;
 }
 
 

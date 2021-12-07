@@ -1,6 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1200px;
-  padding: 0 15%;
+  padding: 0 12%;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 17px;
@@ -34,9 +42,10 @@
   position: relative;
   width: 100%;
   opacity: 80%;
-  background: url(images/fotka.jpeg) no-repeat center;
+  background: url(/images/fotka.jpeg) no-repeat center;
   background-size: cover;
   height: 600px;
+  transition: opacity 0.5s;
 }
 .top__header:hover {
   opacity: 100%;
@@ -145,6 +154,5 @@ li {
 }
 
 .icon--large {
-  width: 45px;
-  padding: 30px;
+  margin: 20px;
 }/*# sourceMappingURL=style.css.map */
