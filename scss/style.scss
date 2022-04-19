@@ -18,12 +18,14 @@ html {
 }
 
 .container {
-  max-width: 1200px;
-  padding: 0 12%;
+  max-width: 1600px;
+  padding: 0 6%;
   margin: 0 auto;
   font-family: $mainFont;
   font-size: 17px;
-
+  @media screen and (min-width: 600px) {
+    padding: 0 12%;
+  }
 }
 
 .top {
